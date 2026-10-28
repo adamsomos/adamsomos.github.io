@@ -3,9 +3,102 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Foldgaz import</title>
+  <title>Adatvédelmi tájékoztató – Foldgaz import</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 50px auto;
+      padding: 0 20px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+      color: #183642;
+      background: #f5f8fa;
+    }
+    main {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+    }
+    a { color: #086b8a; }
+  </style>
 </head>
 <body>
-  <h1>Foldgaz import</h1>
+  <main>
+    <h1>Adatvédelmi tájékoztató</h1>
+    <p>Alkalmazás: Foldgaz import</p>
+
+    <h2>Üzemeltető és kapcsolat</h2>
+    <p>
+      Somos Ádám.
+      Kapcsolat:
+      <a href="mailto:adam.somos@gmail.com">adam.somos@gmail.com</a>.
+      Az alkalmazás saját célú számlanyilvántartásra szolgál.
+    </p>
+
+    <h2>Hozzáférés és kezelt adatok</h2>
+    <p>
+      Az alkalmazás a tulajdonos engedélyével hozzáfér
+      a Gmail-levelekhez és PDF-mellékleteikhez.
+      A számlákból a fogyasztást, a fizetendő összeget,
+      a számlaszámot és az elszámolási időszakot dolgozza fel.
+      A nyilvántartás tartalmazza a levél beérkezési idejét,
+      a melléklet nevét és a forráslevél hivatkozását is.
+    </p>
+
+    <h2>Az adatkezelés célja</h2>
+    <p>
+      A földgázszámlák adatainak Excelben történő
+      nyilvántartása a tulajdonos Google Drive-fiókjában.
+      Sikeres mentés után az alkalmazás olvasottra állítja
+      a feldolgozott leveleket, hozzáadja a Földgáz címkét,
+      és eltávolítja őket a Beérkező levelek közül.
+    </p>
+
+    <h2>Tárolás és védelem</h2>
+    <p>
+      A feldolgozás a tulajdonos Raspberry Pi eszközén történik.
+      Az Excel-fájl a Google Drive-on és helyi másolatként
+      a Raspberry Pi eszközön található. Frissítés előtt
+      az alkalmazás helyi biztonsági másolatot készít.
+      A Google-hozzáférési tokenek szintén az eszközön tárolódnak.
+    </p>
+    <p>
+      A számlák adatai és a hozzáférési tokenek
+      nem kerülnek erre a nyilvános weboldalra vagy GitHubra.
+    </p>
+
+    <h2>Adatok megosztása és felhasználása</h2>
+    <p>
+      Az alkalmazás nem értékesít adatokat, nem használja
+      őket hirdetési célokra vagy mesterségesintelligencia-modellek
+      tanítására. A feldolgozott adatokat a tulajdonos
+      Google Drive-fiókjában és saját eszközén tárolja.
+      Az alkalmazás nem továbbítja az adatokat más címzetteknek.
+    </p>
+    <p>
+      A Google API-kon keresztül kapott információk felhasználása
+      megfelel a Google API Services User Data Policy
+      követelményeinek, beleértve a Limited Use előírásait.
+    </p>
+
+    <h2>Megőrzés, törlés és hozzáférés visszavonása</h2>
+    <p>
+      Az Excel-fájl és a helyi biztonsági másolatok
+      a tulajdonos általi törlésig megmaradnak.
+      A Google-hozzáférés a Google-fiók kapcsolódó alkalmazásainál
+      bármikor visszavonható. Ez önmagában nem törli
+      a már létrehozott fájlokat; azokat külön kell eltávolítani.
+    </p>
+
+    <h2>A weboldal látogatása</h2>
+    <p>
+      Ez az oldal nem használ saját analitikát vagy sütiket.
+      A tárhelyszolgáltató GitHub a látogatásokhoz kapcsolódó
+      technikai adatokat saját adatvédelmi tájékoztatója
+      szerint kezelheti.
+    </p>
+
+    <p><a href="index.html">Vissza a bemutatóoldalra</a></p>
+  </main>
 </body>
 </html>
