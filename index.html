@@ -4,8 +4,64 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Foldgaz import</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 50px auto;
+      padding: 0 20px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+      color: #183642;
+      background: #f5f8fa;
+    }
+    main {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+    }
+    a { color: #086b8a; }
+  </style>
 </head>
 <body>
-  <h1>Foldgaz import</h1>
+  <main>
+    <h1>Foldgaz import</h1>
+    <p>
+      Személyes használatú számlafeldolgozó alkalmazás,
+      amely a tulajdonos Raspberry Pi eszközén fut.
+    </p>
+
+    <h2>Működés</h2>
+    <p>
+      Az alkalmazás a tulajdonos engedélyével megkeresi
+      a Gmail-fiókban érkezett földgázszámlák PDF-mellékleteit.
+      Kinyeri a fogyasztást és a fizetendő összeget,
+      majd egy Excel-fájlt frissít a tulajdonos Google Drive-ján.
+    </p>
+    <p>
+      Sikeres mentés után a feldolgozott levelet olvasottra
+      állítja, hozzáadja a Földgáz címkét, és eltávolítja
+      a Beérkező levelek közül.
+    </p>
+
+    <h2>Google-hozzáférés</h2>
+    <p>
+      A Gmail-hozzáférés a számlamellékletek olvasásához
+      és a feldolgozott levelek rendezéséhez szükséges.
+      A Drive-hozzáférés az alkalmazás által létrehozott
+      Excel-fájl kezelésére szolgál.
+    </p>
+    <p>
+      A számlák feldolgozása a Raspberry Pi eszközön történik.
+      Ez a weboldal csak az alkalmazást mutatja be.
+    </p>
+
+    <p>
+      Kapcsolat:
+      <a href="mailto:adam.somos@gmail.com">adam.somos@gmail.com</a>
+    </p>
+    <p>
+      <a href="privacy.html">Adatvédelmi tájékoztató</a>
+    </p>
+  </main>
 </body>
 </html>
